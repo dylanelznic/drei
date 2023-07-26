@@ -156,7 +156,7 @@ export function ScrollControls({
     if (events.connected === el) {
       const containerLength = size[horizontal ? 'width' : 'height']
       const scrollLength = el[horizontal ? 'scrollWidth' : 'scrollHeight']
-      const scrollThreshold = scrollLength - containerLength
+      const scrollThreshold = scrollLength - containerLength - 0.5
 
       let current = 0
       let disableScroll = true
